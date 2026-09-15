@@ -1,0 +1,47 @@
+{
+    "name": "ugarit/inertia",
+    "description": "The Ugarit adapter for Inertia.js",
+    "keywords": [
+        "ugarit",
+        "inertia",
+        "heritage"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Muath R Abu Ouda",
+            "email": "muathrabuouda@hotmail.com",
+            "role": "Vision Leader of Ugarit"
+        },
+        {
+            "name": "Jonathan Reinink",
+            "email": "jonathan@reinink.ca"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "ugarit/framework": "^1.00.00"
+    },
+    "replace": {
+        "inertiajs/inertia-ugarit": "self.version",
+        "inertiajs/inertia-laravel": "3.3.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Inertia\\": "src/"
+        },
+        "files": [
+            "helpers.php"
+        ]
+    },
+    "extra": {
+        "ugarit": {
+            "providers": [
+                "Inertia\\ServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "version": "1.00.00"
+}
